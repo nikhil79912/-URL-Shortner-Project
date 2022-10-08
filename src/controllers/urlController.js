@@ -34,7 +34,7 @@ redisClient.on("connect", async function () {   // connecting to cache memory
 
 // --- Connection setup for redis  - using SET and GET 
 
-const SETEX_ASYNC = promisify(redisClient.SETEX).bind(redisClient)
+const SETEX_ASYNC = promisify(redisClient.SETEX).bind(redisClient) // 
 const GET_ASYNC = promisify(redisClient.GET).bind(redisClient)
 
 
